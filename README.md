@@ -1,0 +1,2 @@
+# Information_Theoretic_Approach_to_Optimal_Experimental_Design_of_Current_Profiles
+Supplemental material for ECS poster presentation

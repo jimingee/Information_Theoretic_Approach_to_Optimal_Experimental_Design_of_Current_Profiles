@@ -91,6 +91,7 @@ Different basis functions exhibit distinct properties in terms of **smoothness, 
   <img src="images/2_3_bspline.png" alt="B-spline Basis" width="400"/>
   <img src="images/2_4_polynomial.png" alt="Polynomial Bais" width="400"/>
   <img src="images/2_5_fourier.png" alt="Fourier Basis" width="400"/>
+  <em>Basis Function Patterns</em>
 </p>
 
 <br><br>
@@ -143,22 +144,25 @@ Notation
   <img src="images/2_6_parameter_interactions.png" alt="Parameter Interactions" width="400"/><br>
   <em>Figure. Parameter Interactions ( Top 10 parameters )</em><br>
 </p>
-
+<br>
 
 <p align="center">
   <img src="images/2_7_spectral_clustering.png" alt="Spectral clustering to group parameters" width="600"/><br>
   <em>Figure. Spectral clustering to group parameters</em><br>
 </p>
 
+<br>
 <p align="center">
   <img src="images/2_8_param_group_table.png" alt="Parameter Grouping Result" width="400"/><br>
   <em>Table. Parameter Grouping Result</em><br>
 </p>
+<br>
 
 <p align="center">
   <img src="images/2_9_orthogonality.png" alt="Orthogonality Result" width="400"/><br>
   <em>Table. Orthogonality Result</em><br>
 </p>
+<br>
 
 <br>
 
@@ -168,6 +172,7 @@ Notation
 - Metaheuristic algorithms (e.g., Particle Swarm Optimization) were employed for the optimization.
 - The result was **informative current profiles** that maximize parameter identifiability.
 
+<br>
 
 <p align="center">
   <img src="images/2_10_workflow.png" alt="Overall Workflow" width="300"/><br>
@@ -205,6 +210,8 @@ The experimental results show that the proposed **polynomial-based current profi
   <img src="images/3_2_parameter_estimation_performance.png" alt="Parameter Estimation Performance" width="350"/><br>
   <em>Table. Parameter Estimation Performance</em><br>
 </p>
+
+<br>
 <p align="center">
   <img src="images/3_3_parameter_relative_error.png" alt="Table: Parameter Relative Error (%)" width="500"/><br>
   <em>Table. Parameter Relative Error (%) </em><br>

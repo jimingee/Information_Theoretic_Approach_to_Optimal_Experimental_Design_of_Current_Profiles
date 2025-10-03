@@ -154,13 +154,13 @@ Notation
 <br>
 <p align="center">
   <img src="images/2_8_param_group_table.png" alt="Parameter Grouping Result" width="400"/><br>
-  <em>Table. Parameter Grouping Result</em><br>
+  <em>Table 4. Parameter Grouping Result</em><br>
 </p>
 <br>
 
 <p align="center">
   <img src="images/2_9_orthogonality.png" alt="Orthogonality Result" width="400"/><br>
-  <em>Table. Orthogonality Result</em><br>
+  <em>Table 5. Orthogonality Result</em><br>
 </p>
 <br>
 
@@ -193,7 +193,7 @@ Notation
 #### Optimal Designed Currents
 
 <p align="center">
-  <img src="images/3_1_currents.png" alt="Optimal Designed Currents" width="800"/>
+  <img src="images/3_1_currents.png" alt="Optimal Designed Currents" width="800"/><br>
   <em>Figure 6. Optimal Designed Currents</em>
 </p>
 
@@ -208,13 +208,13 @@ The experimental results show that the proposed **polynomial-based current profi
 
 <p align="center">
   <img src="images/3_2_parameter_estimation_performance.png" alt="Parameter Estimation Performance" width="350"/><br>
-  <em>Table 4. Parameter Estimation Performance</em><br>
+  <em>Table 6. Parameter Estimation Performance</em><br>
 </p>
 
 <br>
 <p align="center">
   <img src="images/3_3_parameter_relative_error.png" alt="Table: Parameter Relative Error (%)" width="500"/><br>
-  <em>Table 5. Parameter Relative Error (%) </em><br>
+  <em>Table 7. Parameter Relative Error (%) </em><br>
 </p>
 
 <br>

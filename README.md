@@ -5,7 +5,7 @@
 
 # Information-Theoretic Approach to Optimal Experimental Design of Current Profiles for Accurate Battery Parameter Estimation
 
-<br><br>
+<br>
 
 ## 1. Main Idea
 
@@ -15,17 +15,17 @@
 - However, **the impact of current profile design** on estimation performance has been largely overlooked.  
 - Model parameter identifiability is governed by the applied current profile.  
 
-
+<br>
 
 **[Effect of Current Profiles on Parameter Estimation Performance]**  
 
 <p align="center">
   <img src="images/1_1_current_profiles.png" alt="Current Profiles" width="600"/>
   <br>
-  <em>Figure. Current profiles</em>
+  <em>Figure. Current Profiles</em>
 </p>
 
-
+<br>
 
 **[Parameter Estimation Performance under Identical Estimator]**  
 <p align="center">
@@ -34,7 +34,7 @@
   <em>Table. Parameter Estimation Performance under Identical Estimator</em>
 </p>
 
-
+<br>
 
 **[Limitation of Current Design Methods]**
 
@@ -44,12 +44,11 @@
 </p>
 
 
-
 ### Objective
 1. Develop a flexible current design framework with high design freedom.  
 2. Design optimized current profiles that maximize parameter identifiability.
 
-
+<br><br><br>
 
 
 ## 2. Method
@@ -58,19 +57,23 @@
 - **Model**: Doyle–Fuller–Newman (DFN)  
 - **Target Battery**: NMC  
 - **Target Parameters**: 16 parameters in DFN
-<img src="images/2_1_parameters.png" alt="Target Parameters" width="400"/>
+<p align="center">
+  <img src="images/2_1_parameters.png" alt="Target Parameters" width="90%"/>
+  <em>Table. Target Parameters</em>
+</p>
 
 
 ### Method 1. Flexible Framework for Current Profile Design
 To ensure **diversity** in current profiles, multiple basis functions such as **B-spline, Fourier, and Polynomial** were employed. Each basis provides distinct characteristics—smoothness, periodicity, or nonlinearity—and they allow the generation of a wide range of current waveforms without structural constraints. This approach enlarges the design space compared to conventional current design methods, thereby enhancing the potential for optimal current design. 
 
-<img src="images/2_2_current_function.png" alt="Current Function" width="400"/>
-
-
+<p align="center">
+  <img src="images/2_2_current_function.png" alt="Current Function" width="400"/>
+</p>
 The generated current profile $I(t;\alpha)$ is formulated as a weighted combination of basis functions, where $\alpha$  controls the shape and $\phi(t)$  denotes the basis functions.
 
-**Basis Function Characteristics**
 
+
+**Basis Function Characteristics**
 Different basis functions exhibit distinct properties in terms of **smoothness, periodicity, and nonlinearity,** enabling the generation of diverse current profiles for analysis and experimentation.
 
 | Basis      | Description                    | Characteristics                   |
@@ -79,13 +82,11 @@ Different basis functions exhibit distinct properties in terms of **smoothness, 
 | Polynomial | Simple global representation   | Linear or highly curved profiles  |
 | Fourier    | Periodic representation        | Repeated, oscillatory currents    |
 
-
-<img src="images/2_3_bspline.png" alt="B-spline Basis" width="400"/>
-
-<img src="images/2_4_polynomial.png" alt="Polynomial Bais" width="400"/>
-
-<img src="images/2_5_fourierpng" alt="Fourier Basis" width="400"/>
-
+<p align="center">
+  <img src="images/2_3_bspline.png" alt="B-spline Basis" width="400"/>
+  <img src="images/2_4_polynomial.png" alt="Polynomial Bais" width="400"/>
+  <img src="images/2_5_fourier.png" alt="Fourier Basis" width="400"/>
+</p>
 
 ### Method 2. Optimized Current Profiles for Maximizing Parameter Identifiability
 Parameter identifiability was quantified using Global Sensitivity Analysis (GSA). Based on the GSA results, parameters were **grouped**, and optimized currents were **designed for each group** to maximize identifiability.
@@ -104,9 +105,9 @@ $$
 S_i = \frac{\mathrm{Var}_{X_i}\big( \mathbb{E}_{X_{\sim i}}(Y|X_i) \big)}{\mathrm{Var}(Y)}
 $$
 
-  - **Total-order index ( $S_{Ti}$ )**
-      - Captures **all effects** of $X_i$ : main + interactions.
-      - Measures how much variance remains if $X_i$ is fixed.
+   - **Total-order index ( $S_{Ti}$ )**
+        - Captures **all effects** of $X_i$ : main + interactions.
+        - Measures how much variance remains if $X_i$ is fixed.
 
 $$
 S_{Ti} = 1 - \frac{\mathrm{Var}_{X_{\sim i}}\big( \mathbb{E}(Y|X_{\sim i}) \big)}{\mathrm{Var}(Y)} 
@@ -129,15 +130,16 @@ Notation
 - This separation allows higher identifiability by separating parameters that interfere with each other.
 - **Spectral clustering** was used for grouping, followed by Gram–Schmidt orthogonalization to validate independence. All orthogonalization values were **below 0.4**, ensuring independence among parameters within each group.
 
-
-
-<img src="images/2_6_parameter_interactions.png" alt="Parameter Interactions  ( Top 10 parameters )" width="400"/>
-
-<img src="images/2_7_spectral_clustering.png" alt="Spectral clustering to group parameters" width="400"/>
-
-<img src="images/2_8_param_group_table.png" alt="Parameter Grouping Result" width="400"/>
-
-<img src="images/2_9_orthogonality.png" alt="Orthogonality Result" width="400"/>
+<p align="center">
+  <img src="images/2_6_parameter_interactions.png" alt="Parameter Interactions" width="400"/>
+  <em>Figure. Parameter Interactions ( Top 10 parameters )</em>
+  <img src="images/2_7_spectral_clustering.png" alt="Spectral clustering to group parameters" width="400"/>
+  <em>Figure. Spectral clustering to group parameters</em>
+  <img src="images/2_8_param_group_table.png" alt="Parameter Grouping Result" width="400"/>
+  <em>Table. Parameter Grouping Result</em>
+  <img src="images/2_9_orthogonality.png" alt="Orthogonality Result" width="400"/>
+  <em>Table. Orthogonality Result</em>
+</p>
 
 
 **Group-wise Current Optimization**
@@ -147,9 +149,10 @@ Notation
 - The result was **informative current profiles** that maximize parameter identifiability.
 
 
-
-<img src="images/2_10_workflow.png" alt="Overall Workflow" width="400"/>
-
+<p align="center">
+  <img src="images/2_10_workflow.png" alt="Overall Workflow" width="400"/>
+  <em>Figure. Overall Workflow</em>
+</p>
 
 
 ## 3. Experimental Evaluation
@@ -162,10 +165,12 @@ Notation
 
 **Optimal Designed Currents**
 
-<img src="images/3_1_currents.png" alt="Optimal Designed Currents" width="400"/>
+<p align="center">
+  <img src="images/3_1_currents.png" alt="Optimal Designed Currents" width="800"/>
+  <em>Figure. Optimal Designed Currents</em>
+</p>
 
-
-Each current profile was generated within the range of –1C - 1C over a duration of 1000 seconds. Using the proposed methodology, current profiles based on polynomial, B-spline, and Fourier basis functions were formulated. These currents were optimized to maximize the Global Sensitivity Analysis (GSA) of group1 parameters, thereby enhancing parameter identifiability.
+Each current profile was generated within the **range of –1C ~ 1C over a duration of 1000 seconds**. Using the proposed methodology, current profiles based on polynomial, B-spline, and Fourier basis functions were formulated. These currents were optimized to **maximize the Global Sensitivity Analysis (GSA)** of group1 parameters, thereby enhancing parameter identifiability.
 
 
 
@@ -176,6 +181,12 @@ The experimental results show that the proposed **polynomial-based current profi
 <img src="images/3_2_parameter_estimation_performance.png" alt="Parameter Estimation Performance" width="400"/>
 <img src="images/3_3_parameter_relative_error.png" alt="Table: Parameter Relative Error (%)" width="400"/>
 
+<p align="center">
+  <img src="images/3_2_parameter_estimation_performance.png" alt="Parameter Estimation Performance" width="400"/>
+  <em>Table. Parameter Estimation Performance</em>
+  <img src="images/3_3_parameter_relative_error.png" alt="Table: Parameter Relative Error (%)" width="400"/>
+  <em>Table. Parameter Relative Error (%</em>
+</p>
 
 **Result Anaylsis**
 

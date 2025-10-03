@@ -22,7 +22,7 @@
 <p align="center">
   <img src="images/1_1_current_profiles.png" alt="Current Profiles" width="600"/>
   <br>
-  <em>Figure. Current Profiles</em>
+  <em>Figure 1. Current Profiles</em>
 </p>
 
 <br>
@@ -31,7 +31,7 @@
 <p align="center">
   <img src="images/1_2_parameter_estimation_performance.png" alt="Parameter Estimation Performance" width="300"/>
   <br>
-  <em>Table. Parameter Estimation Performance under Identical Estimator</em>
+  <em>Table 1. Parameter Estimation Performance under Identical Estimator</em>
 </p>
 
 <br>
@@ -40,7 +40,7 @@
 
 <p align="center">
   <img src="images/1_3_comparison.png" alt="Comparison" width="800"/><br>
-  <em>Table. Comparison of Current Design Methods</em>
+  <em>Table 2. Comparison of Current Design Methods</em>
 </p>
 
 
@@ -59,7 +59,7 @@
 - **Target Parameters**: 16 parameters in DFN
 <p align="center">
   <img src="images/2_1_parameters.png" alt="Target Parameters" width="99%"/>
-  <em>Table. Target Parameters</em>
+  <em>Table 3. Target Parameters</em>
 </p>
 <br>
 
@@ -91,7 +91,7 @@ Different basis functions exhibit distinct properties in terms of **smoothness, 
   <img src="images/2_3_bspline.png" alt="B-spline Basis" width="400"/>
   <img src="images/2_4_polynomial.png" alt="Polynomial Bais" width="400"/>
   <img src="images/2_5_fourier.png" alt="Fourier Basis" width="400"/>
-  <em>Basis Function Patterns</em>
+  <em>Figure2. Basis Function Patterns</em>
 </p>
 
 <br><br>
@@ -142,13 +142,13 @@ Notation
 
 <p align="center">
   <img src="images/2_6_parameter_interactions.png" alt="Parameter Interactions" width="400"/><br>
-  <em>Figure. Parameter Interactions ( Top 10 parameters )</em><br>
+  <em>Figure 3. Parameter Interactions ( Top 10 parameters )</em><br>
 </p>
 <br>
 
 <p align="center">
   <img src="images/2_7_spectral_clustering.png" alt="Spectral clustering to group parameters" width="600"/><br>
-  <em>Figure. Spectral clustering to group parameters</em><br>
+  <em>Figure 4. Spectral clustering to group parameters</em><br>
 </p>
 
 <br>
@@ -176,7 +176,7 @@ Notation
 
 <p align="center">
   <img src="images/2_10_workflow.png" alt="Overall Workflow" width="300"/><br>
-  <em>Figure. Overall Workflow</em>
+  <em>Figure 5. Overall Workflow</em>
 </p>
 
 <br><br><br>
@@ -194,7 +194,7 @@ Notation
 
 <p align="center">
   <img src="images/3_1_currents.png" alt="Optimal Designed Currents" width="800"/>
-  <em>Figure. Optimal Designed Currents</em>
+  <em>Figure 6. Optimal Designed Currents</em>
 </p>
 
 Each current profile was generated within the **range of –1C ~ 1C over a duration of 1000 seconds**. Using the proposed methodology, current profiles based on polynomial, B-spline, and Fourier basis functions were formulated. These currents were optimized to **maximize the Global Sensitivity Analysis (GSA)** of group1 parameters, thereby enhancing parameter identifiability.
@@ -208,13 +208,13 @@ The experimental results show that the proposed **polynomial-based current profi
 
 <p align="center">
   <img src="images/3_2_parameter_estimation_performance.png" alt="Parameter Estimation Performance" width="350"/><br>
-  <em>Table. Parameter Estimation Performance</em><br>
+  <em>Table 4. Parameter Estimation Performance</em><br>
 </p>
 
 <br>
 <p align="center">
   <img src="images/3_3_parameter_relative_error.png" alt="Table: Parameter Relative Error (%)" width="500"/><br>
-  <em>Table. Parameter Relative Error (%) </em><br>
+  <em>Table 5. Parameter Relative Error (%) </em><br>
 </p>
 
 <br>

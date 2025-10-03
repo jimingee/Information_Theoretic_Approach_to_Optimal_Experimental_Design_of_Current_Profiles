@@ -1,5 +1,7 @@
 
-(images/ECS.png)
+<p align="center">
+  <img src="images/ECS.png" alt="ECS logo"/>
+</p>
 
 # Information-Theoretic Approach to Optimal Experimental Design of Current Profiles for Accurate Battery Parameter Estimation
 
@@ -11,16 +13,27 @@
 - However, **the impact of current profile design** on estimation performance has been largely overlooked.  
 - Model parameter identifiability is governed by the applied current profile.  
 
-**Effect of Current Profiles on Parameter Estimation Performance**  
-![Current Profiles](images/1_1_current_profiles.png)
-<img src="images/1_1_current_profiles.png" alt="Current Profiles" width="400"/>
+**[Effect of Current Profiles on Parameter Estimation Performance]**  
 
-**Table. Parameter Estimation Performance under Identical Estimator**  
-<img src="images/1_2_parameter_estimation_performance.png" alt="Parameter Estimation Performance" width="400"/>
+<p align="center">
+  <img src="images/1_1_current_profiles.png" alt="Current Profiles" width="800"/>
+  <br>
+  <em>Figure. Current profiles</em>
+</p>
 
+**[Parameter Estimation Performance under Identical Estimator]**  
+<p align="center">
+  <img src="images/1_2_parameter_estimation_performance.png" alt="Parameter Estimation Performance" width="400"/>
+  <br>
+  <em>Table. Parameter Estimation Performance under Identical Estimator</em>
+</p>
 
-**Limitation of Current Design Methods**
-<img src="images/1_3_comparison.png" alt="Comparison" width="400"/>
+**[Limitation of Current Design Methods]**
+
+<p align="center">
+  <img src="images/1_3_comparison.png" alt="Comparison" width="800"/><br>
+  <em>Table. Comparison of Current Design Methods</em>
+</p>
 
 ### Objective
 1. Develop a flexible current design framework with high design freedom.  

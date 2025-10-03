@@ -29,7 +29,7 @@
 
 **[Parameter Estimation Performance under Identical Estimator]**  
 <p align="center">
-  <img src="images/1_2_parameter_estimation_performance.png" alt="Parameter Estimation Performance" width="400"/>
+  <img src="images/1_2_parameter_estimation_performance.png" alt="Parameter Estimation Performance" width="300"/>
   <br>
   <em>Table. Parameter Estimation Performance under Identical Estimator</em>
 </p>
@@ -58,10 +58,10 @@
 - **Target Battery**: NMC  
 - **Target Parameters**: 16 parameters in DFN
 <p align="center">
-  <img src="images/2_1_parameters.png" alt="Target Parameters" width="90%"/>
+  <img src="images/2_1_parameters.png" alt="Target Parameters" width="99%"/>
   <em>Table. Target Parameters</em>
 </p>
-
+<br>
 
 ### Method 1. Flexible Framework for Current Profile Design
 To ensure **diversity** in current profiles, multiple basis functions such as **B-spline, Fourier, and Polynomial** were employed. Each basis provides distinct characteristics—smoothness, periodicity, or nonlinearity—and they allow the generation of a wide range of current waveforms without structural constraints. This approach enlarges the design space compared to conventional current design methods, thereby enhancing the potential for optimal current design. 
@@ -71,16 +71,18 @@ To ensure **diversity** in current profiles, multiple basis functions such as **
 </p>
 The generated current profile $I(t;\alpha)$ is formulated as a weighted combination of basis functions, where $\alpha$  controls the shape and $\phi(t)$  denotes the basis functions.
 
-
+<br>
 
 **Basis Function Characteristics**
-Different basis functions exhibit distinct properties in terms of **smoothness, periodicity, and nonlinearity,** enabling the generation of diverse current profiles for analysis and experimentation.
 
+Different basis functions exhibit distinct properties in terms of **smoothness, periodicity, and nonlinearity,** enabling the generation of diverse current profiles for analysis and experimentation.
+<p align="center">
 | Basis      | Description                    | Characteristics                   |
 |------------|--------------------------------|-----------------------------------|
 | B-spline   | Smooth, locally controllable   | Nonlinear, continuous, curved     |
 | Polynomial | Simple global representation   | Linear or highly curved profiles  |
 | Fourier    | Periodic representation        | Repeated, oscillatory currents    |
+</p>
 
 <p align="center">
   <img src="images/2_3_bspline.png" alt="B-spline Basis" width="400"/>
@@ -88,9 +90,10 @@ Different basis functions exhibit distinct properties in terms of **smoothness, 
   <img src="images/2_5_fourier.png" alt="Fourier Basis" width="400"/>
 </p>
 
+<br><br>
 ### Method 2. Optimized Current Profiles for Maximizing Parameter Identifiability
 Parameter identifiability was quantified using Global Sensitivity Analysis (GSA). Based on the GSA results, parameters were **grouped**, and optimized currents were **designed for each group** to maximize identifiability.
-
+<br>
 **Parameter Identifiability Analysis using GSA**
 - Quantified by **Global Sensitivity Analysis (GSA)**  
 - Parameter contributions to the output voltage V(t) were quantified as a measure of identifiability.
@@ -122,7 +125,7 @@ Notation
 
 
 [More Info about GSA?](https://butter00.tistory.com/manage/newpost/97?type=post&returnURL=ENTRY)
-
+<br>
 
 **Parameter Grouping**
 
@@ -131,17 +134,17 @@ Notation
 - **Spectral clustering** was used for grouping, followed by Gram–Schmidt orthogonalization to validate independence. All orthogonalization values were **below 0.4**, ensuring independence among parameters within each group.
 
 <p align="center">
-  <img src="images/2_6_parameter_interactions.png" alt="Parameter Interactions" width="400"/>
+  <img src="images/2_6_parameter_interactions.png" alt="Parameter Interactions" width="400"/><br>
   <em>Figure. Parameter Interactions ( Top 10 parameters )</em>
-  <img src="images/2_7_spectral_clustering.png" alt="Spectral clustering to group parameters" width="400"/>
+  <img src="images/2_7_spectral_clustering.png" alt="Spectral clustering to group parameters" width="600"/><br>
   <em>Figure. Spectral clustering to group parameters</em>
-  <img src="images/2_8_param_group_table.png" alt="Parameter Grouping Result" width="400"/>
+  <img src="images/2_8_param_group_table.png" alt="Parameter Grouping Result" width="300"/><br>
   <em>Table. Parameter Grouping Result</em>
-  <img src="images/2_9_orthogonality.png" alt="Orthogonality Result" width="400"/>
+  <img src="images/2_9_orthogonality.png" alt="Orthogonality Result" width="400"/><br>
   <em>Table. Orthogonality Result</em>
 </p>
 
-
+<br>
 **Group-wise Current Optimization**
 
 - Current profiles were optimized to **maximize parameter identifiability within each group**.
@@ -150,12 +153,13 @@ Notation
 
 
 <p align="center">
-  <img src="images/2_10_workflow.png" alt="Overall Workflow" width="400"/>
+  <img src="images/2_10_workflow.png" alt="Overall Workflow" width="400"/><br>
   <em>Figure. Overall Workflow</em>
 </p>
 
-
+<br><br><br>
 ## 3. Experimental Evaluation
+<br>
 
 ### Parameter Estimation (Group 1)
 
@@ -163,6 +167,7 @@ Notation
     - **Baseline**: CC-CV, Sinusoid, HPPC
     - **Proposed method**: Generated currents (B-spline, Fourier, Polynomial)
 
+<br>
 **Optimal Designed Currents**
 
 <p align="center">
@@ -172,22 +177,21 @@ Notation
 
 Each current profile was generated within the **range of –1C ~ 1C over a duration of 1000 seconds**. Using the proposed methodology, current profiles based on polynomial, B-spline, and Fourier basis functions were formulated. These currents were optimized to **maximize the Global Sensitivity Analysis (GSA)** of group1 parameters, thereby enhancing parameter identifiability.
 
-
+<br>
 
 **Parameter Estimation Performance**
 
 The experimental results show that the proposed **polynomial-based current profile achieved the lowest voltage RMSE**, indicating the most accurate parameter estimation. The second-best performance was obtained with the CCCV profile. As illustrated in the figure, both profiles exhibit relatively smooth shapes with limited fluctuations. This suggests that Group 1 parameters (particle radius, diffusivity, and volume fraction) are best estimated under current profiles with minimal variations.
 
-<img src="images/3_2_parameter_estimation_performance.png" alt="Parameter Estimation Performance" width="400"/>
-<img src="images/3_3_parameter_relative_error.png" alt="Table: Parameter Relative Error (%)" width="400"/>
 
 <p align="center">
-  <img src="images/3_2_parameter_estimation_performance.png" alt="Parameter Estimation Performance" width="400"/>
+  <img src="images/3_2_parameter_estimation_performance.png" alt="Parameter Estimation Performance" width="300"/><br>
   <em>Table. Parameter Estimation Performance</em>
-  <img src="images/3_3_parameter_relative_error.png" alt="Table: Parameter Relative Error (%)" width="400"/>
+  <img src="images/3_3_parameter_relative_error.png" alt="Table: Parameter Relative Error (%)" width="600"/><br>
   <em>Table. Parameter Relative Error (%</em>
 </p>
 
+<br>
 **Result Anaylsis**
 
 - **Group 1 parameter characteristics**
@@ -199,13 +203,15 @@ The experimental results show that the proposed **polynomial-based current profi
 - **Identifiability**
     - Highly dynamic currents mix the influence of multiple parameters, increasing correlation and reducing identifiability.
     - Smooth profiles simplify the system response, making individual parameter contributions more distinguishable.
- 
+
+<br><br><br>
 ## 4. Conclusions
 
 This study proposes a **sensitivity-driven current design framework** for parameter estimation in electrochemical models. By applying Global Sensitivity Analysis (GSA), parameters were grouped and optimized currents were designed for each group.
 
 The results show that Group1 parameters are more accurately estimated under smooth currents such as CC-CV and polynomial profiles. In particular, the polynomial current alleviates parameter correlation, leading to improved estimation performance. Overall, the proposed **information-theoretic based optimal current design** significantly enhances estimation performance compared to conventional current profiles, enabling **efficient and reliable parameter estimation**.
 
+<br>
 **Future Work**
 
 - **Consider Temperature conditions**: Incorporate sensitivity and identifiability changes under varying thermal environments to ensure robust estimation in practical settings.

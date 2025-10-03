@@ -36,7 +36,7 @@
 
 <br>
 
-**[Limitation of Current Design Methods]**
+#### [Limitation of Current Design Methods]
 
 <p align="center">
   <img src="images/1_3_comparison.png" alt="Comparison" width="800"/><br>
@@ -69,11 +69,12 @@ To ensure **diversity** in current profiles, multiple basis functions such as **
 <p align="center">
   <img src="images/2_2_current_function.png" alt="Current Function" width="400"/>
 </p>
-The generated current profile $ I(t;\alpha) $ is formulated as a weighted combination of basis functions, where $ \alpha $  controls the shape and $ \phi(t) $  denotes the basis functions.
+The generated current profile $ I(t;\alpha) $ is formulated as a weighted combination of basis functions, where \( \alpha \)  controls the shape and $ \phi(t) $  denotes the basis functions.
 
 <br><br>
 
 **Basis Function Characteristics**
+<br>
 Different basis functions exhibit distinct properties in terms of **smoothness, periodicity, and nonlinearity,** enabling the generation of diverse current profiles for analysis and experimentation.
 <p align="center">
 
@@ -97,6 +98,7 @@ Different basis functions exhibit distinct properties in terms of **smoothness, 
 Parameter identifiability was quantified using Global Sensitivity Analysis (GSA). Based on the GSA results, parameters were **grouped**, and optimized currents were **designed for each group** to maximize identifiability.
 <br>
 
+<br>
 
 **Parameter Identifiability Analysis using GSA**
 - Quantified by **Global Sensitivity Analysis (GSA)**  
@@ -183,7 +185,7 @@ Notation
 
 <br>
 
-#### Optimal Designed Currents**
+#### Optimal Designed Currents
 
 <p align="center">
   <img src="images/3_1_currents.png" alt="Optimal Designed Currents" width="800"/>
@@ -192,7 +194,7 @@ Notation
 
 Each current profile was generated within the **range of –1C ~ 1C over a duration of 1000 seconds**. Using the proposed methodology, current profiles based on polynomial, B-spline, and Fourier basis functions were formulated. These currents were optimized to **maximize the Global Sensitivity Analysis (GSA)** of group1 parameters, thereby enhancing parameter identifiability.
 
-<br>
+<br><br>
 
 **Parameter Estimation Performance**
 
@@ -201,9 +203,11 @@ The experimental results show that the proposed **polynomial-based current profi
 
 <p align="center">
   <img src="images/3_2_parameter_estimation_performance.png" alt="Parameter Estimation Performance" width="350"/><br>
-  <em>Table. Parameter Estimation Performance</em>
+  <em>Table. Parameter Estimation Performance</em><br>
+</p>
+<p align="center">
   <img src="images/3_3_parameter_relative_error.png" alt="Table: Parameter Relative Error (%)" width="500"/><br>
-  <em>Table. Parameter Relative Error (%</em>
+  <em>Table. Parameter Relative Error (%) </em><br>
 </p>
 
 <br>

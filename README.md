@@ -1,4 +1,12 @@
-# Information_Theoretic_Approach_to_Optimal_Experimental_Design_of_Current_Profiles
-Supplemental material for ECS poster presentation
+# Information-Theoretic Approach to Optimal Experimental Design of Current Profiles for Accurate Battery Parameter Estimation
 
-This repository will be completed soon.
+## 1. Main Idea
+
+### Background
+- Increasing adoption of physics-based electrochemical models requires accurate parameter estimation.  
+- Previous studies mainly focused on improving parameter estimator algorithms.  
+- However, the impact of **current profile design** on estimation performance has been largely overlooked.  
+- Model parameter identifiability is governed by the applied current profile.  
+
+**Effect of Current Profiles on Parameter Estimation Performance**  
+![Current Profiles](images/1_1_current_profiles.png)

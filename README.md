@@ -90,7 +90,7 @@ Different basis functions exhibit distinct properties in terms of **smoothness, 
 <p align="center">
   <img src="images/2_3_bspline.png" alt="B-spline Basis" width="400"/>
   <img src="images/2_4_polynomial.png" alt="Polynomial Bais" width="400"/>
-  <img src="images/2_5_fourier.png" alt="Fourier Basis" width="400"/>
+  <img src="images/2_5_fourier.png" alt="Fourier Basis" width="400"/> <br>
   <em>Figure2. Basis Function Patterns</em>
 </p>
 

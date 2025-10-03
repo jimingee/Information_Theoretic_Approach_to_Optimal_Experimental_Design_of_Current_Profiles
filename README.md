@@ -77,12 +77,15 @@ The generated current profile $I(t;\alpha)$ is formulated as a weighted combinat
 
 Different basis functions exhibit distinct properties in terms of **smoothness, periodicity, and nonlinearity,** enabling the generation of diverse current profiles for analysis and experimentation.
 <p align="center">
+
 | Basis      | Description                    | Characteristics                   |
 |------------|--------------------------------|-----------------------------------|
 | B-spline   | Smooth, locally controllable   | Nonlinear, continuous, curved     |
 | Polynomial | Simple global representation   | Linear or highly curved profiles  |
 | Fourier    | Periodic representation        | Repeated, oscillatory currents    |
+
 </p>
+
 
 <p align="center">
   <img src="images/2_3_bspline.png" alt="B-spline Basis" width="400"/>
